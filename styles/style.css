@@ -3,6 +3,35 @@ html
   direction: rtl;
 }
 
-*
+div#header
 {
+  border-bottom: 1px dashed black;
+}
+
+  div#header div#question
+  {
+    text-align: center;
+  }
+
+  div#header div#timer
+  {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  div#header div#timer span
+  {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+div#answers div.answer
+{
+  border:1px solid black;
+  padding: 7px 1px;
+  margin: 10px 1px;
+
+  font-size: 1.7em;
+
+  border-radius: 5px;
 }
