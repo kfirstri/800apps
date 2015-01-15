@@ -1653,6 +1653,7 @@ process.chdir = function (dir) {
 
 },{}],"c:\\Dev\\Projects\\800Example\\bundle_here\\app.js":[function(require,module,exports){
 // React Router
+var React = require('react');
 var Router = require('react-router');
 var Route = Router.Route;
 var NotFoundRoute = Router.NotFoundRoute;
@@ -1762,7 +1763,7 @@ Router.run(routes, function (Handler) {
   React.render(React.createElement(Handler, null), document.getElementById('content'));
 });
 
-},{"react-router":"c:\\Dev\\Projects\\800Example\\bundle_here\\node_modules\\react-router\\modules\\index.js"}],"c:\\Dev\\Projects\\800Example\\bundle_here\\node_modules\\react-router\\modules\\actions\\LocationActions.js":[function(require,module,exports){
+},{"react":"c:\\Dev\\Projects\\800Example\\bundle_here\\node_modules\\react\\react.js","react-router":"c:\\Dev\\Projects\\800Example\\bundle_here\\node_modules\\react-router\\modules\\index.js"}],"c:\\Dev\\Projects\\800Example\\bundle_here\\node_modules\\react-router\\modules\\actions\\LocationActions.js":[function(require,module,exports){
 /**
  * Actions that modify the URL.
  */

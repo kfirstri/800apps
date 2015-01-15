@@ -1,5 +1,4 @@
 // React Router
-var React = require('react');
 var Router = require('react-router');
 var Route = Router.Route;
 var NotFoundRoute = Router.NotFoundRoute;
@@ -11,7 +10,7 @@ var App = React.createClass({displayName: "App",
   render: function() {
     return (
       React.createElement("div", null, 
-        React.createElement("div", {className: "row"}, 
+        React.createElement("div", {className: "row kfir"}, 
           React.createElement("div", {id: "header", className: "container"}, 
             React.createElement("div", {className: "row"}, 
               React.createElement("div", {id: "question", className: "col-xs-12"}, 
