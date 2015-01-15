@@ -35,3 +35,14 @@ div#answers div.answer
 
   border-radius: 5px;
 }
+
+div#profile
+{
+  text-align: center;
+  padding-top: 10px;
+}
+
+  div#profile div#test
+  {
+    margin: 5px;
+  }
