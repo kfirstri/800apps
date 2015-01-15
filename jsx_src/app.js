@@ -14,7 +14,7 @@ var App = React.createClass({
           <div id="header" className="container">
             <div className="row">
               <div id="question" className="col-xs-12">
-                <span id="question"><h2>אפליקציה</h2></span>
+                <Link to="profile"><span id="question"><h2>אפליקציה</h2></span></Link>
               </div>
             </div>
           </div>
@@ -55,10 +55,10 @@ var Profile  = React.createClass({
         <div id="profile" className="container">
           <div className="row">
             <div id="test" className="col-xs-12">
-              <a className="btn btn-default">התחל מבחן חשוב מאוד</a>
+              <Link to="test"><div className="btn btn-default">התחל מבחן חשוב מאוד</div></Link>
             </div>
             <div id="test" className="col-xs-12">
-              <a className="btn btn-default">מבחן חשוב אחר</a>
+              <Link to="test"><div className="btn btn-default">מבחן נוסף שכדאי לעשות</div></Link>
             </div>
           </div>
         </div>

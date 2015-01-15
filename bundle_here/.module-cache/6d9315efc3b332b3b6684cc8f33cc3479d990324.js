@@ -14,7 +14,7 @@ var App = React.createClass({displayName: "App",
           React.createElement("div", {id: "header", className: "container"}, 
             React.createElement("div", {className: "row"}, 
               React.createElement("div", {id: "question", className: "col-xs-12"}, 
-                React.createElement(Link, {to: "profile"}, React.createElement("span", {id: "question"}, React.createElement("h2", null, "אפליקציה")))
+                React.createElement("span", {id: "question"}, React.createElement("h2", null, "אפליקציה"))
               )
             )
           )
@@ -55,10 +55,10 @@ var Profile  = React.createClass({displayName: "Profile",
         React.createElement("div", {id: "profile", className: "container"}, 
           React.createElement("div", {className: "row"}, 
             React.createElement("div", {id: "test", className: "col-xs-12"}, 
-              React.createElement(Link, {to: "test"}, React.createElement("div", {className: "btn btn-default"}, "התחל מבחן חשוב מאוד"))
+              React.createElement(Link, {to: "Test"}, React.createElement("div", {className: "btn btn-default"}, "התחל מבחן חשוב מאוד"))
             ), 
             React.createElement("div", {id: "test", className: "col-xs-12"}, 
-              React.createElement(Link, {to: "test"}, React.createElement("div", {className: "btn btn-default"}, "מבחן נוסף שכדאי לעשות"))
+              React.createElement(Link, {to: "Test"}, React.createElement("div", {className: "btn btn-default"}, "מבחן נוסף שכדאי לעשות"))
             )
           )
         )

@@ -14,7 +14,7 @@ var App = React.createClass({displayName: "App",
           React.createElement("div", {id: "header", className: "container"}, 
             React.createElement("div", {className: "row"}, 
               React.createElement("div", {id: "question", className: "col-xs-12"}, 
-                React.createElement(Link, {to: "profile"}, React.createElement("span", {id: "question"}, React.createElement("h2", null, "אפליקציה")))
+                React.createElement("span", {id: "question"}, React.createElement("h2", null, "אפליקציה"))
               )
             )
           )
