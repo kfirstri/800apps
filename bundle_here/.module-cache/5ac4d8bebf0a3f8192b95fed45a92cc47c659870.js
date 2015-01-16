@@ -75,16 +75,6 @@ var Profile  = React.createClass({displayName: "Profile",
 
 var TestAnswers = React.createClass({displayName: "TestAnswers",
   // TODO : Create a answer class
-  componentDidMount: function() {
-    var animClick = 'pulse';
-    // var animEntry = 'fadeInRight';
-
-    $('div.answer').click(function() {
-      $(this).addClass(animClick + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        $(this).removeClass(animClick + ' bounce animated');
-      });
-    });
-  },
   render: function() {
     return (
       React.createElement("div", {className: "row"}, 
