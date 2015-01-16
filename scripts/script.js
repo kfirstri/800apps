@@ -3,20 +3,3 @@ if ('addEventListener' in document) {
     FastClick.attach(document.body);
   }, false);
 }
-
-$(document).ready(function() {
-
-  var animClick = 'pulse';
-  // var animEntry = 'fadeInRight';
-
-  $('div.answer').click(function() {
-    $(this).addClass(animClick + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $(this).removeClass(animClick + ' bounce animated');
-    });
-  });
-
-  // $('div#answers').addClass(animEntry + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-  //     $(this).removeClass(animEntry + ' bounce animated');
-  // });
-
-});

@@ -10,7 +10,7 @@ var Link = Router.Link;
 var RouteHandler = Router.RouteHandler;
 
 // Components
-
+//var Test = require('TestComponent/Test');
 
 var App = React.createClass({displayName: "App",
   render: function() {
@@ -31,28 +31,28 @@ var App = React.createClass({displayName: "App",
   }
 });
 
-var Test = React.createClass({displayName: "Test",
-  render: function() {
-    return (
-      React.createElement("div", null, 
-        React.createElement("div", {className: "row"}, 
-          React.createElement("div", {id: "header", className: "container"}, 
-            React.createElement("div", {className: "row"}, 
-              React.createElement("div", {id: "question", className: "col-xs-7"}, 
-                React.createElement("span", {id: "question"}, React.createElement("h2", null, "פוזמק"))
-              ), 
-              React.createElement("div", {id: "timer", className: "col-xs-5"}, 
-                React.createElement("span", {className: "glyphicon glyphicon-time"}), 
-                "8 שניות"
-              )
-            )
-          )
-        ), 
-        React.createElement(TestAnswers, null)
-      )
-    );
-  }
-});
+// var Test = React.createClass({
+//   render: function() {
+//     return (
+//       <div>
+//         <div className="row">
+//           <div id="header" className="container">
+//             <div className="row">
+//               <div id="question" className="col-xs-7">
+//                 <span id="question"><h2>פוזמק</h2></span>
+//               </div>
+//               <div id="timer" className="col-xs-5">
+//                 <span className="glyphicon glyphicon-time"></span>
+//                 8 שניות
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         <TestAnswers />
+//       </div>
+//     );
+//   }
+// });
 
 var Profile  = React.createClass({displayName: "Profile",
   render: function() {
@@ -75,16 +75,6 @@ var Profile  = React.createClass({displayName: "Profile",
 
 var TestAnswers = React.createClass({displayName: "TestAnswers",
   // TODO : Create a answer class
-  componentDidMount: function() {
-    var animClick = 'pulse';
-    // var animEntry = 'fadeInRight';
-
-    $('div.answer').click(function() {
-      $(this).addClass(animClick + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        $(this).removeClass(animClick + ' bounce animated');
-      });
-    });
-  },
   render: function() {
     return (
       React.createElement("div", {className: "row"}, 
