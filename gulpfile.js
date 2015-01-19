@@ -1,19 +1,22 @@
-var browserify = require('gulp-browserify');
 var gulp = require('gulp');
-var source = require("vinyl-source-stream");
-var reactify = require('reactify');
+var browserify = require('gulp-browserify');
 
-gulp.task('build', function(){
-  // Single entry point to browserify
-  gulp.src('jsx_src/app.js')
-  .pipe(browserify({
-    transform: ['reactify'],
-    insertGlobals : true
-  }))
-  .pipe(gulp.dest('./scripts/app.js'));
+gulp.task('build', function() {
+  gulp.src('./jsx_src/app.js')
+    .pipe(browserify({ transform: ['reactify'] }))
+    .pipe(gulp.dest('./scripts/'));
 });
 
-gulp.task('watch', function() {
+gulp.task('build_ugly', function() {
+  gulp.src('./jsx_src/app.js')
+  .pipe(browserify({ transform: ['reactify'] }))
+  .pipe(gulp.dest('./scripts/'));
+});
+
+gulp.task('watch', function(args) {
   console.log('building...');
-  gulp.watch('jsx_src/*', ['build']);
+
+  var buildType = args === 'prod' ? 'build_ugly' : 'build';
+
+  gulp.watch('jsx_src/app.js', [buildType]);
 });

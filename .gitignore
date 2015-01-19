@@ -1,1 +1,3 @@
 ./bundle_here
+node_modules/
+jsx_src/node_modules/
